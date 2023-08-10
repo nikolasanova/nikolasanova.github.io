@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html class="no-js" lang="en">
+
 <head>
-	<meta charset="utf-8"> 
+	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<meta name="viewport" content="width=500" />
-	<meta name="keywords" content="ScrollMagic, example, scrolling, attaching, scrollbar, anchor, link, in-page, navigation, hash" />
-	<meta name="author"	content="Jan Paepke (www.janpaepke.de)" />
-	<title>Section Slides (manual) - Examples - ScrollMagic</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Storytelling Ketenagakerjaan</title>
 	<link href='assets/css/google-font.css' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="assets/css/normalize.css" type="text/css">
 	<link rel="stylesheet" href="assets/css/style.css" type="text/css">
@@ -17,35 +16,38 @@
 	<script type="text/javascript" src="assets/js/lib/highlight.pack.js"></script>
 	<script type="text/javascript" src="assets/js/lib/modernizr.custom.min.js"></script>
 	<script type="text/javascript" src="assets/js/examples.js"></script>
-	
+
 	<script type="text/javascript" src="assets/js/lib/gsap3/gsap.min.js"></script>
 	<script type="text/javascript" src="scrollmagic/uncompressed/ScrollMagic.js"></script>
 	<script type="text/javascript" src="scrollmagic/uncompressed/plugins/animation.gsap.js"></script>
-	<script type="text/javascript" src="scrollmagic/uncompressed/plugins/debug.addIndicators.js"></script></head>
+	<script type="text/javascript" src="scrollmagic/uncompressed/plugins/debug.addIndicators.js"></script>
+</head>
+
 <body>
-	
+
 	<div id="content-wrapper">
 		<div id="example-wrapper">
 			<div class="scrollContent">
-				
+
 				<section class="demo" id="section-wipes">
-				<section class="panel" id="titlechart">
-					<div id="description">
-						<h1 class="badge">INTRODUCTION</h1>
-					</div>
-					<script>
-					// init controller
-					var controller = new ScrollMagic.Controller();
-					// init controller horizontal
-					var controller_h = new ScrollMagic.Controller({vertical: false});
-					</script>
-				</section>
+					<section class="panel skin" id="titlechart">
+						<div id="description">
+							<h1 class="badge">INTRODUCTION</h1>
+						</div>
+						<script>
+							// init controller
+							var controller = new ScrollMagic.Controller();
+							// init controller horizontal
+							var controller_h = new ScrollMagic.Controller({ vertical: false });
+						</script>
+					</section>
 					<style type="text/css">
 						#pinContainer {
 							width: 100%;
 							height: 100%;
 							overflow: hidden;
 						}
+
 						.panel {
 							height: 100%;
 							width: 100%;
@@ -56,39 +58,40 @@
 						<section class="panel blue">
 							<b>ONE</b>
 							<div class="spacer s2"></div>
-								<div id="trigger1" class="spacer s0"></div>
-								<div id="animate1" class="box2 skin">
-									<p>Section 1</p>
-								</div>
-								<div class="spacer s2"></div>
-								<script>
-										// build scene
-										var scene = new ScrollMagic.Scene({
-															triggerElement: "#trigger1"
-														})
-														.setTween("#animate1", 0.2, {backgroundColor: "green", scale: 2.5}) // trigger a TweenMax.to tween
-														.addIndicators({name: "1 (duration: 0)"}) // add indicators (requires plugin)
-														.addTo(controller);
-								</script>
+							<div id="trigger1" class="spacer s0"></div>
+							<div id="animate1" class="box2 skin">
+								<p>Section 1</p>
+							</div>
+							<div class="spacer s2"></div>
+							<script>
+								// build scene
+								var scene = new ScrollMagic.Scene({
+									triggerElement: "#trigger1"
+								})
+									.setTween("#animate1", 0.2, { backgroundColor: "green", scale: 2.5 }) // trigger a TweenMax.to tween
+									.addIndicators({ name: "1 (duration: 0)" }) // add indicators (requires plugin)
+									.addTo(controller);
+							</script>
 						</section>
 						<section class="panel turqoise" id="trick2">
 							<b>TWO</b id="trick2">
-							
+
 							<div class="spacer s1"></div>
 							<div id="trigger2" class="spacer s0"></div>
-								<div id="animate2" class="box2 skin">
-									<p>Section 2</p>
-								</div>
-								<div class="spacer s2"></div>
-								<script>
-										// build scene
-										var scene = new ScrollMagic.Scene({
-															triggerElement: "#trigger2"
-														})
-														.setTween("#animate2", 0.2, {backgroundColor: "green", scale: 2.5}) // trigger a TweenMax.to tween
-														.addIndicators({name: "1 (duration: 0)"}) // add indicators (requires plugin)
-														.addTo(controller);
-								</script>						</section>
+							<div id="animate2" class="box2 skin">
+								<p>Section 2</p>
+							</div>
+							<div class="spacer s2"></div>
+							<script>
+								// build scene
+								var scene = new ScrollMagic.Scene({
+									triggerElement: "#trigger2"
+								})
+									.setTween("#animate2", 0.2, { backgroundColor: "green", scale: 2.5 }) // trigger a TweenMax.to tween
+									.addIndicators({ name: "2 (duration: 0)" }) // add indicators (requires plugin)
+									.addTo(controller);
+							</script>
+						</section>
 						<section class="panel green">
 							<b>THREE</b>
 							<div class="spacer s2"></div>
@@ -97,24 +100,24 @@
 								<p>Section 3</p>
 							</div>
 							<div class="spacer s2"></div>
-								<script>
-										// build scene
-										var scene3 = new ScrollMagic.Scene({
-															triggerElement: "#trigger3"
-														})
-														.setTween("#animate3", 0.2, {backgroundColor: "green", scale: 2.5}) // trigger a TweenMax.to tween
-														.addIndicators({name: "3 (duration: 0)"}) // add indicators (requires plugin)
-														.addTo(controller_h);
-								</script>
+							<script>
+								// build scene
+								var scene3 = new ScrollMagic.Scene({
+									triggerElement: "#trigger3"
+								})
+									.setTween("#animate3", 0.2, { backgroundColor: "green", scale: 2.5 }) // trigger a TweenMax.to tween
+									.addIndicators({ name: "3 (duration: 0)" }) // add indicators (requires plugin)
+									.addTo(controller_h);
+							</script>
 						</section>
 						<section class="panel bordeaux">
 							<b>FOUR</b>
 						</section>
 						<script>
 						// init controller
-						
+
 						</script>
-						
+
 						<section class="panel red">
 							<b>FIVE</b>
 							<div class="spacer s2"></div>
@@ -123,15 +126,15 @@
 								<p>Section 5</p>
 							</div>
 							<div class="spacer s2"></div>
-								<script>
-										// build scene
-										var scene3 = new ScrollMagic.Scene({
-															triggerElement: "#trigger4"
-														})
-														.setTween("#animate4", 0.2, {backgroundColor: "green", scale: 2.5}) // trigger a TweenMax.to tween
-														.addIndicators({name: "4 (duration: 0)"}) // add indicators (requires plugin)
-														.addTo(controller_h);
-								</script>
+							<script>
+								// build scene
+								var scene3 = new ScrollMagic.Scene({
+									triggerElement: "#trigger4"
+								})
+									.setTween("#animate4", 0.2, { backgroundColor: "green", scale: 2.5 }) // trigger a TweenMax.to tween
+									.addIndicators({ name: "4 (duration: 0)" }) // add indicators (requires plugin)
+									.addTo(controller_h);
+							</script>
 						</section>
 						<section class="panel white">
 							<b>FIVE</b>
@@ -141,15 +144,15 @@
 								<p>Section 6</p>
 							</div>
 							<div class="spacer s2"></div>
-								<script>
-										// build scene
-										var scene3 = new ScrollMagic.Scene({
-															triggerElement: "#trigger6a"
-														})
-														.setTween("#animate6a", 0.2, {backgroundColor: "green", scale: 2.5}) // trigger a TweenMax.to tween
-														.addIndicators({name: "6 (duration: 0)"}) // add indicators (requires plugin)
-														.addTo(controller);
-								</script>
+							<script>
+								// build scene
+								var scene3 = new ScrollMagic.Scene({
+									triggerElement: "#trigger6a"
+								})
+									.setTween("#animate6a", 0.2, { backgroundColor: "green", scale: 2.5 }) // trigger a TweenMax.to tween
+									.addIndicators({ name: "6 (duration: 0)" }) // add indicators (requires plugin)
+									.addTo(controller);
+							</script>
 						</section>
 						<section class="panel black">
 							<b>FIVE</b>
@@ -159,15 +162,15 @@
 								<p>Ending</p>
 							</div>
 							<div class="spacer s2"></div>
-								<script>
-										// build scene
-										var scene3 = new ScrollMagic.Scene({
-															triggerElement: "#trigger7a"
-														})
-														.setTween("#animate7a", 0.2, {backgroundColor: "green", scale: 2.5}) // trigger a TweenMax.to tween
-														.addIndicators({name: "6 (duration: 0)"}) // add indicators (requires plugin)
-														.addTo(controller_h);
-								</script>
+							<script>
+								// build scene
+								var scene3 = new ScrollMagic.Scene({
+									triggerElement: "#trigger7a"
+								})
+									.setTween("#animate7a", 0.2, { backgroundColor: "green", scale: 2.5 }) // trigger a TweenMax.to tween
+									.addIndicators({ name: "6 (duration: 0)" }) // add indicators (requires plugin)
+									.addTo(controller_h);
+							</script>
 						</section>
 					</div>
 					<script>
@@ -177,29 +180,30 @@
 
 							// define movement of panels
 							var wipeAnimation = new TimelineMax()
-								.fromTo("section.panel.turqoise", 1, {x: "100%"}, {x: "0%", ease: Linear.easeNone})  // in f
-								.fromTo("section.panel.green",    1, {x:  "100%"}, {x: "0%", ease: Linear.easeNone}) 
-								.fromTo("section.panel.bordeaux", 1, {x: "100%"}, {x: "0%", ease: Linear.easeNone})
-								.fromTo("section.panel.red", 1, {x: "100%"}, {x: "0%", ease: Linear.easeNone}) // in from top;
-								.fromTo("section.panel.white", 1, {y: "100%"}, {y: "0%", ease: Linear.easeNone}) // in from top;
-								.fromTo("section.panel.black", 1, {x: "100%"}, {x: "0%", ease: Linear.easeNone}); // in from top;
+								.fromTo("section.panel.turqoise", 1, { x: "100%" }, { x: "0%", ease: Linear.easeNone })  // in f
+								.fromTo("section.panel.green", 1, { x: "100%" }, { x: "0%", ease: Linear.easeNone })
+								.fromTo("section.panel.bordeaux", 1, { x: "100%" }, { x: "0%", ease: Linear.easeNone })
+								.fromTo("section.panel.red", 1, { x: "100%" }, { x: "0%", ease: Linear.easeNone }) // in from top;
+								.fromTo("section.panel.white", 1, { y: "100%" }, { y: "0%", ease: Linear.easeNone }) // in from top;
+								.fromTo("section.panel.black", 1, { x: "100%" }, { x: "0%", ease: Linear.easeNone }); // in from top;
 
 							// create scene to pin and link animation
 							new ScrollMagic.Scene({
-									triggerElement: "#pinContainer",
-									triggerHook: "onLeave",
-									duration: "300%"
-								})
+								triggerElement: "#pinContainer",
+								triggerHook: "onLeave",
+								duration: "300%"
+							})
 								.setPin("#pinContainer")
 								.setTween(wipeAnimation)
 								.addIndicators() // add indicators (requires plugin)
 								.addTo(controller);
 						});
 					</script>
-				</section>				
+				</section>
 			</div>
 		</div>
 	</div>
 	<script type="text/javascript" src="assets/js/tracking.js"></script>
 </body>
+
 </html>

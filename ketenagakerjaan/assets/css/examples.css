@@ -999,10 +999,10 @@ a.viewsource:before {
 	background-image: none;
 }
 .demo#section-slides .panel, .demo#section-wipes .panel {
-	background-image: url("../img/example_bg_spacer_v.gif");
+	background-image: url("../img/example_bg_spacer_v2.gif");
 }
 .demo#section-wipes #pinContainer .turqoise, .demo#section-wipes #pinContainer .green, .demo#section-slides #slideContainer .panel {
-	background-image: url("../img/example_bg_spacer_h.gif");
+	background-image: url("../img/example_bg_spacer_h2.gif");
 }
 .demo#section-slides .panel > b, .demo#section-wipes .panel > b {
 	font-size: 15px;
