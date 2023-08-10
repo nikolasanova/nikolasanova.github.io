@@ -29,7 +29,7 @@
 			<div class="scrollContent">
 				<section id="titlechart">
 					<div id="description">
-						<h1 class="badge">HALO</h1>
+						<h1 class="badge">INTRODUCTION</h1>
 					</div>
 					<script>
 					// init controller
@@ -57,8 +57,7 @@
 							<div class="spacer s2"></div>
 								<div id="trigger1" class="spacer s0"></div>
 								<div id="animate1" class="box2 skin">
-									<p>You wouldn't like me, when I'm angry!</p>
-									<a href="#" class="viewsource">view source</a>
+									<p>Section 1</p>
 								</div>
 								<div class="spacer s2"></div>
 								<script>
@@ -75,31 +74,26 @@
 							<b>TWO</b id="trick2">
 							
 							<div class="spacer s1"></div>
-							<div id="trigger2" class="spacer s1"></div>
-							<div class="spacer s0"></div>
-							<div id="animate2" class="box1 black">
-								<p>Smurf me!</p>
-								<a href="#" class="viewsource">view source</a>
-							</div>
-							<div class="spacer s2"></div>
-							<script>
-								// build scene
-								var scene2 = new ScrollMagic.Scene({triggerElement: "#trigger2", duration: 0})
-												// animate color and top border in relation to scroll position
-												.setTween("#animate2", {borderTop: "30px solid white", backgroundColor: "blue", scale: 0.7}) // the tween durtion can be omitted and defaults to 1
-												.addIndicators({name: "2 (duration: 0)"}) // add indicators (requires plugin)
-												.addTo(controller_h);
-							</script>
-									
-							
-						</section>
+							<div id="trigger2" class="spacer s0"></div>
+								<div id="animate2" class="box2 skin">
+									<p>Section 2</p>
+								</div>
+								<div class="spacer s2"></div>
+								<script>
+										// build scene
+										var scene = new ScrollMagic.Scene({
+															triggerElement: "#trigger2"
+														})
+														.setTween("#animate2", 0.2, {backgroundColor: "green", scale: 2.5}) // trigger a TweenMax.to tween
+														.addIndicators({name: "1 (duration: 0)"}) // add indicators (requires plugin)
+														.addTo(controller);
+								</script>						</section>
 						<section class="panel green">
 							<b>THREE</b>
 							<div class="spacer s2"></div>
 							<div id="trigger3" class="spacer s0"></div>
 							<div id="animate3" class="box2 skin">
-								<p>You wouldn't like me, when I'm angry!</p>
-								<a href="#" class="viewsource">view source</a>
+								<p>Section 3</p>
 							</div>
 							<div class="spacer s2"></div>
 								<script>
@@ -125,8 +119,7 @@
 							<div class="spacer s2"></div>
 							<div id="trigger4" class="spacer s0"></div>
 							<div id="animate4" class="box2 skin">
-								<p>You wouldn't like me, when I'm angry!</p>
-								<a href="#" class="viewsource">view source</a>
+								<p>Section 5</p>
 							</div>
 							<div class="spacer s2"></div>
 								<script>
@@ -144,8 +137,7 @@
 							<div class="spacer s2"></div>
 							<div id="trigger6a" class="spacer s0"></div>
 							<div id="animate6a" class="box2 skin">
-								<p>You wouldn't like me, when I'm angry!</p>
-								<a href="#" class="viewsource">view source</a>
+								<p>Section 6</p>
 							</div>
 							<div class="spacer s2"></div>
 								<script>
@@ -163,8 +155,7 @@
 							<div class="spacer s2"></div>
 							<div id="trigger7a" class="spacer s0"></div>
 							<div id="animate7a" class="box2 skin">
-								<p>You wouldn't like me, when I'm angry!</p>
-								<a href="#" class="viewsource">view source</a>
+								<p>Ending</p>
 							</div>
 							<div class="spacer s2"></div>
 								<script>
